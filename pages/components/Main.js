@@ -23,10 +23,10 @@ const  Main= (props)=> {
             setThingsList(response.data);
         });
     }, [props.token]);
-
+    
     return (
         <div>
-            <h1>Things List Demo</h1>
+            <h1>Things List 401d7</h1>
             {thingsList.map((thing, index) =>{
                 return <Thing key={index} name={thing.name} description={thing.description}/>
             })}
